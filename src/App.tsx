@@ -1,9 +1,11 @@
-import './App.css'
+import { Flex } from '@chakra-ui/react'
 import Welcome from './views/Welcome'
 function App() {
 
   return (
-<Welcome/>
+    <Flex align="center" justify="center">
+      <Welcome/>
+    </Flex>
   )
 }
 
