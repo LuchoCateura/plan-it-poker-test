@@ -1,10 +1,7 @@
-import WelcomeForm from '../components/WelcomeForm'
+import WelcomeForm from "../components/WelcomeForm";
 
 function Welcome() {
+  return <WelcomeForm />;
+}
 
-    return (
-      <WelcomeForm/>
-    )
-  }
-  
-  export default Welcome
+export default Welcome;

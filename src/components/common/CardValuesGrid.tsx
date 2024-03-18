@@ -7,11 +7,11 @@ function CardValuesGrid() {
         <Grid templateColumns='repeat(5, 1fr)' gap={5} alignContent="center">
             {cardValues.map((card)=>{
                 return (
-                <GridItem h='30px'>
+                <GridItem key={card} h='30px'>
                     <Checkbox>{card}</Checkbox>
                 </GridItem>) })}
         </Grid>
     )
 }
 
-export default CardValuesGrid
+export default CardValuesGrid;
