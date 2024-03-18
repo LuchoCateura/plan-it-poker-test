@@ -1,14 +1,13 @@
-import { Flex } from '@chakra-ui/react'
-import Welcome from './views/Welcome'
-import CreateRoomForm from './components/CreateRoomForm'
+import { Flex } from "@chakra-ui/react";
+import Start from "./components/Start";
+
 function App() {
 
   return (
-    <Flex align="center" justify="center">
-       {/* <Welcome/> */}
-       <CreateRoomForm/>
+    <Flex justify="center">
+      <Start/>
     </Flex>
-  )
+  );
 }
 
-export default App
+export default App;
