@@ -2,18 +2,21 @@ import { Box, HStack, Input, VStack } from "@chakra-ui/react";
 import Button from "./common/Button";
 import CardValuesGrid from "./common/CardValuesGrid";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-//import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { roomNameUpdate } from "../features/rooms/roomSlice";
+import { RootState } from "../store";
 
 function CreateRoomForm() {
+  const roomId = useSelector((state: RootState) => state.rooms.id);
+
   const [roomName, setRoomName] = useState("");
   const dispatch = useDispatch();
-  //const navigate = useNavigate();
-  
-  function handleClick(){
+  const navigate = useNavigate();
+
+  function handleClick() {
     dispatch(roomNameUpdate(roomName));
-    // navigate("/room");
+    navigate(`/rooms/${roomId}`);
   }
 
   return (

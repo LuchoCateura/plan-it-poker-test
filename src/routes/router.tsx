@@ -19,12 +19,13 @@ const router = createBrowserRouter([
         path: "create-room",
         element: <CreateRoomForm />,
       },
+      {
+        path: "rooms/:roomId",
+        element: <Room />,
+      },
     ],
   },
-  {
-    path: "rooms:roomId",
-    element: <Room />,
-  },
+
 ]);
 
 export default router;

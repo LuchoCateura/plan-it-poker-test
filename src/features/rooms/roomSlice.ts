@@ -4,7 +4,7 @@ interface Room {
   }
   
   const initialState: Room = {
-    id:"",
+    id:"1",
     name: "",
   };
   
