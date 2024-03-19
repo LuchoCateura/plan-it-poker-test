@@ -8,7 +8,7 @@ function WelcomeForm() {
   const userName = useSelector((state: RootState) => state.users.name);
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleCreateRoom() {
     if (!userName) {
       return;
     }
@@ -31,7 +31,7 @@ function WelcomeForm() {
         <Input placeholder="Enter room ID" />
         <Button>Enter room</Button>
         <p>Create a room</p>
-        <Button clickHandler={handleClick}>Create room</Button>
+        <Button clickHandler={handleCreateRoom}>Create room</Button>
       </VStack>
     </Box>
   );

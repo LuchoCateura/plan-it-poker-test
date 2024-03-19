@@ -14,9 +14,13 @@ function CreateRoomForm() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleCreateRoom() {
     dispatch(roomNameUpdate(roomName));
     navigate(`/rooms/${roomId}`);
+  }
+
+  function handleCancel() {
+    navigate("/welcome")
   }
 
   return (
@@ -33,8 +37,8 @@ function CreateRoomForm() {
         <CardValuesGrid />
       </VStack>
       <HStack p="40px">
-        <Button clickHandler={handleClick}>Create Room</Button>
-        <Button>Cancel</Button>
+        <Button clickHandler={handleCreateRoom}>Create Room</Button>
+        <Button clickHandler={handleCancel}>Cancel</Button>
       </HStack>
     </Box>
   );

@@ -11,7 +11,7 @@ function Start() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleStart() {
     if (!userName) {
       return;
     }
@@ -36,7 +36,7 @@ function Start() {
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
         />
-        <Button clickHandler={handleClick}>Start</Button>
+        <Button clickHandler={handleStart}>Start</Button>
       </VStack>
     </Box>
   );
