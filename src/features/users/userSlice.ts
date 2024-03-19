@@ -12,7 +12,7 @@ interface User {
   
  export default function userReducer(state = initialState, action) {
     switch (action.type) {
-      case "name/update":
+      case "userName/update":
         return { ...state, name: action.payload };
   
       default:
@@ -21,5 +21,5 @@ interface User {
   }
   
   export function userNameUpdate(newName: string) {
-    return { type: "name/update", payload: newName };
+    return { type: "userName/update", payload: newName };
   }
