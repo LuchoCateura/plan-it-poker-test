@@ -6,13 +6,12 @@ import router from "./routes/router";
 import store from "./store";
 import { Provider } from "react-redux";
 
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ChakraProvider>
-      <Provider store={store}>
+    <Provider store={store}>
+      <ChakraProvider>
         <RouterProvider router={router} />
-      </Provider>
-    </ChakraProvider>
+      </ChakraProvider>
+    </Provider>
   </React.StrictMode>
 );
