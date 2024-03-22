@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Welcome from "../views/Welcome";
-import CreateRoomForm from "../components/CreateRoomForm";
+import CreateRoomForm from "../components/forms/CreateRoomForm";
 import PageNotFound from "../views/PageNotFound";
 import Room from "../views/Room";
 

@@ -1,4 +1,4 @@
-import WelcomeForm from "../components/WelcomeForm";
+import WelcomeForm from "../components/forms/WelcomeForm";
 
 function Welcome() {
   return <WelcomeForm />;

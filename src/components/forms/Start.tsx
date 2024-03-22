@@ -1,8 +1,8 @@
 import { Box, Input, VStack } from "@chakra-ui/react";
-import Button from "./common/Button";
+import Button from "../common/Button";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { userNameUpdate } from "../features/users/userSlice";
+import { userNameUpdate } from "../../features/users/userSlice";
 import { useNavigate } from "react-router-dom";
 
 function Start() {
