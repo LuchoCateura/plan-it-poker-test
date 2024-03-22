@@ -8,15 +8,15 @@ interface PokerCardProps {
 function PokerCard({children}:PokerCardProps) {
   return (
     <Card size="sm" borderWidth="1px">
-      <Text>{children}</Text>
+      <Text p="5px">{children}</Text>
       <CardBody>
         <Card borderWidth="1px">
-          <CardBody p="60px">
+          <CardBody py="60px">
             <Text align={"center"}>{children}</Text>
           </CardBody>
         </Card>
       </CardBody>
-      <Text align={"end"}>{children}</Text>
+      <Text p="5px" align={"end"}>{children}</Text>
     </Card>
   );
 }

@@ -1,18 +1,17 @@
-import { SimpleGrid } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import PokerCard from "./PokerCard";
 
 function CardsGrid() {
-  return (
-    <SimpleGrid
-      spacing={4}
-      templateColumns="repeat(auto-fill, minmax(150px, 1fr))"
-    >
-      <PokerCard>1</PokerCard>
-      <PokerCard>2</PokerCard>
-      <PokerCard>3</PokerCard>
+  const cardValues = ['0','1','2','3','5','8','13','21','34','55','89','?','Coffee'];
 
-    </SimpleGrid>
+  return (
+    <Grid templateColumns="repeat(4, 150px)" gap="20px">
+      {cardValues.map((card) => {
+        return (
+            <PokerCard key={card}>{card}</PokerCard>
+        );
+      })}
+    </Grid>
   );
 }
-
 export default CardsGrid;
