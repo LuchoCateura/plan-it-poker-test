@@ -4,8 +4,8 @@ import CardValuesGrid from "../cards/CardValuesGrid";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { roomNameUpdate } from "../../features/rooms/roomSlice";
-import { RootState } from "../../store";
+import { roomNameUpdate } from "../../store/rooms/roomSlice";
+import { RootState } from "../../store/store";
 
 function CreateRoomForm() {
   const roomId = useSelector((state: RootState) => state.rooms.id);

@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import Start from "./components/forms/Start";
 import { useSelector } from "react-redux";
-import { RootState } from "./store";
+import { RootState } from "./store/store";
 import { Outlet } from "react-router-dom";
 
 function App() {

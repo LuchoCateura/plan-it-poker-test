@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
-import { RootState } from "../store";
+import { RootState } from "../store/store";
 import CardsGrid from "../components/cards/CardsGrid";
 
 function Room() {

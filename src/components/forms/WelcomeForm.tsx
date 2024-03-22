@@ -1,7 +1,7 @@
 import { Box, Input, VStack } from "@chakra-ui/react";
 import Button from "../common/Button";
 import { useSelector } from "react-redux";
-import { RootState } from "../../store";
+import { RootState } from "../../store/store";
 import { useNavigate } from "react-router-dom";
 
 function WelcomeForm() {
